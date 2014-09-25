@@ -3,16 +3,17 @@ package code_kata;
 /**
  * Created by WR on 2014/9/25.
  */
-public class FizzBuzzHandler {
-    public static String handle(int num) {
-        if(num % 3 == 0){
-            return "Fizz";
-        }
+public class FizzBuzzHandler extends WordHandler {
+    public FizzBuzzHandler(WordHandler successor) {
+        super(successor);
+    }
 
-        if(num % 5 == 0){
-            return "Buzz";
+    @Override
+    public String handle(int num){
+        if(num % 15 == 0){
+            return "FizzBuzz";
+        }else{
+            return successor.handle(num);
         }
-
-        return String.valueOf(num);
     }
 }
