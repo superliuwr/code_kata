@@ -18,22 +18,22 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void given_3_should_say_3() {
+    public void given_3_should_say_Fizz() {
         assertEquals("Failure -- Given 3 should say Fizz.", "Fizz", FizzBuzzGame.handle(3));
     }
 
     @Test
-    public void given_5_should_say_5() {
+    public void given_5_should_say_Buzz() {
         assertEquals("Failure -- Given 5 should say Buzz.", "Buzz", FizzBuzzGame.handle(5));
     }
 
     @Test
-    public void given_15_should_say_15() {
+    public void given_15_should_say_FizzBuzz() {
         assertEquals("Failure -- Given 15 should say FizzBuzz.", "FizzBuzz", FizzBuzzGame.handle(15));
     }
 
     @Test
-    public void given_7_should_say_7() {
+    public void given_7_should_say_Whizz() {
         assertEquals("Failure -- Given 7 should say Whizz.", "Whizz", FizzBuzzGame.handle(7));
     }
 }

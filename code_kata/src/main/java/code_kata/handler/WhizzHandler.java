@@ -1,19 +1,19 @@
-package code_kata;
+package code_kata.handler;
 
 /**
  * Created by WR on 2014/9/25.
  */
-public class FizzHandler extends WordHandler {
-    public FizzHandler(WordHandler successor) {
+public class WhizzHandler extends WordHandler {
+    public WhizzHandler(WordHandler successor){
         super(successor);
     }
 
     @Override
     public String handle(int num) {
-        if(num % 3 == 0){
-            return "Fizz";
+        if(num % 7 == 0){
+            return "Whizz";
         }else{
             return successor.handle(num);
         }
-    }
+}
 }

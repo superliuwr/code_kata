@@ -1,4 +1,4 @@
-package code_kata;
+package code_kata.handler;
 
 /**
  * Created by WR on 2014/9/25.
